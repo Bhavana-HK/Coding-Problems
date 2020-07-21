@@ -12,8 +12,3 @@ var xorOperation = function(n, start) {
 };
 
 xorOperation(1, 7);
-
-dataRows = [];
-const rowGetter =(i) => ({ ...dataRows[i], id: i });
-console.log(rowGetter(0));
-console.log(rowGetter(1));
