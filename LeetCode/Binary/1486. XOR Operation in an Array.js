@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/xor-operation-in-an-array/
+
 /**
  * @param {number} n
  * @param {number} start
@@ -5,10 +7,8 @@
  */
 var xorOperation = function(n, start) {
     let ans = start;
-    for(let i=0; i<n; i++){
-        ans ^= ((i<<1)+start);
+    for(let i=1; i<n; i++){
+        ans ^= start + (i<<1);
     }
     return ans;
 };
-
-xorOperation(1, 7);
